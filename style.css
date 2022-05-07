@@ -1,5 +1,90 @@
+/*Remove the default margin/padding and set box-sizing to border box*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+/* Make the entire body a flex container and set it to column and space-between
+this will make the content span the entire page. Add fonts. */
+body {
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: space-between;
+}
+/*set a height and color and font size for header, make it a flex and space it properly, add margins.*/
+header {
+    display: flex;
+    height: 75px;
+    color: #f9faf8;
+    background-color: #1f2937;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 225px;
+    padding-right: 300px;
+    font-size: 24px;
+}
+/*Remove styling from list and make it a flex container to format the list properly*/
+header ul{
+    display: flex;
+    gap: 16px;
+    text-decoration: none;
+    list-style: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+/*set the color height and justify the awesome section, margin top fixes white space issues*/
+.awesome-content{
+    color: #f9faf8;
+    height: 500px;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.awesome-content h1{
+    font-size: 48px;
+    font-weight: 800px;
+}
+
+.awesome-content p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+/*Style button */
+.awesome-content button{
+    background-color: #3882f6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 40px;
+    width: 140px;
+    border-style: none;
+    border-radius: 9px;
+}
+/*group the left side of the awesome section */
+.aw-left{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 700px;
+    padding-left: 225px;
+}
+
+.aw-right{
+    padding-right: 200px;
+}
+
+.aw-right img{
+    width: 650px;
+    height: 400px;
+}
+
+/* footer */
+footer {
+
 }
