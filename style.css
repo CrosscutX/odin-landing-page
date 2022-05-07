@@ -5,26 +5,28 @@
     padding: 0;
 }
 /* Make the entire body a flex container and set it to column and space-between
-this will make the content span the entire page. Add fonts. */
+this will make the content span the entire page. Add fonts. Set background color of entire page */
 body {
-    height: 100vh;
+    min-height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial;
     display: flex;
     flex-direction: column;
     flex: auto;
     justify-content: space-between;
+    background-color: #1f2937;
 }
+
 /*set a height and color and font size for header, make it a flex and space it properly, add margins.*/
 header {
     display: flex;
-    height: 75px;
     color: #f9faf8;
-    background-color: #1f2937;
     justify-content: space-between;
     align-items: center;
     padding-left: 225px;
     padding-right: 300px;
     font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 /*Remove styling from list and make it a flex container to format the list properly*/
 header ul{
@@ -38,12 +40,9 @@ header ul{
 /*set the color height and justify the awesome section, margin top fixes white space issues*/
 .awesome-content{
     color: #f9faf8;
-    height: 500px;
-    background-color: #1f2937;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -50px;
 }
 
 .awesome-content h1{
@@ -55,7 +54,7 @@ header ul{
     font-size: 18px;
     color: #e5e7eb;
 }
-/*Style button */
+/*Style button*/
 .awesome-content button{
     background-color: #3882f6;
     color: white;
@@ -74,17 +73,81 @@ header ul{
     width: 700px;
     padding-left: 225px;
 }
-
+/*Pushes image towards center */
 .aw-right{
     padding-right: 200px;
 }
-
+/* Sizes image properly */
 .aw-right img{
     width: 650px;
     height: 400px;
 }
+/* set the background of the random info, set height and margin */
+.random-info{
+    margin-top: 100px;
+    height: 600px;
+    background-color: white;
+}
+/* style h3 tag */
+.random-info h3{
+    font-size: 48px;
+    font-weight:900px;
+    padding-top: 60px;
+    text-align: center;
+}
 
-/* footer */
+/* alignment for body section of random info */
+.random-info-body{
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    height: 100%;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.box-container p{
+    font-size: 18px;
+    color: #242424;
+    text-align: center;
+}
+/* build the boxes! */
+.box{
+    background-color: white;
+    border: 5px solid #3882f6;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+/* quote section */
+.quote{
+    height: 500px;
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*call section*/
+.call-container{
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Footer*/
 footer {
-
+    font-size: 24px;
+    color: #e5e7eb;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
